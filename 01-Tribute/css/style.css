@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700|Permanent+Marker');
+
+/*  $GLOBAL  */
+html {
+  height: 100%;
+  min-height: 100%;
+}
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+/*====================
+$BREAKER JIC
+hr {
+  margin: 0 2% 0 2%;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+======================*/
+
+
+/*  $MAIN  */
+main {
+  background-color: #f0f0f0;
+  width: 100%;
+}
+
+#title-container {
+  background-image: url("https://i.postimg.cc/rsyq35bB/les-plus-grands-jazzmen-americains-des-annees-50-et-60-de-charli.jpg");
+  background-repeat: no-repeat;
+  background-color: #cccccc;
+  background-size: cover;
+  height: 100vh;
+  background-position: 25%;
+  font-size: 6em;
+}
+
+#title {
+  position: absolute;
+  top: 5%;
+  font-family: 'Permanent Marker';
+  font-weight: 500;
+  color: #000000;
+  padding: 1% 10% 1% 10%;
+  background-color: rgba(245, 245, 245, 0.4);
+}
+
+#title-bottom {
+  position: absolute;
+  bottom: 5%;
+  right: 0;
+  font-family: 'Raleway';
+  font-weight: 500;
+  color: #000000;
+  padding: 1% 10% 1% 10%;
+  background-color: rgba(245, 245, 245, 0.4);
+}
+
+#tribute-info {
+  padding: 2% 0 2% 0;
+}
+
+#content-header {
+  color: #d4af37;
+  background-color: #000000;
+  border-top: 5px ridge #d4af37;
+  border-bottom: 5px groove #d4af37;
+  text-align: center;
+  width: 100%;
+}
+
+.content-header h3 {
+  font-size: 0.8em;
+}
+
+#flex-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 96%;
+  margin: 2%;
+}
+
+
+/*  $BIO  */
+#bio {
+  background-color: #ffffff;
+}
+
+
+/*  $PHOTOS  */
+#photos {
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#photos-contents {
+  width: 96%;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin: 2%;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#img-div {
+  width: 96%;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin: 2%;
+}
+
+#img-caption {
+  text-align: center;
+  font-size: 0.5em;
+  font-family: 'Raleway';
+}
+
+#img2 {
+  max-width: 100%;
+  height: auto;
+  display: none;
+  margin-top: 5%;
+}
+
+#Img2-div {
+  display: none;
+}
+
+#img2-caption {
+  text-align: center;
+  font-size: 0.5em;
+  font-family: 'Raleway';
+  display:none;
+}
+
+/*======================
+#img2-hr{
+  display:none;
+}
+======================*/
+
+/*  $BIO  */
+#main-content {
+  font-family: 'Raleway';
+  font-size: 0.6em;
+  text-align: justify;
+  margin: 0 2% 0 2%;
+  padding-bottom: 1%;
+}
+
+
+/*  $REFERENCES  */
+#references {
+  position: relative;
+  bottom: 0;
+  font-size: .8em;
+  width: 100%;
+  background-color: #000;
+  color: #d4af37;
+}
+#references p {
+  margin-bottom: 1%;
+  text-align: center;
+}
+#references a {
+  color: #d4af37;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 1%;
+}
+
+
+/*  $@media  */
+@media (min-width: 30em) {
+  #photos-contents {
+    width: 96%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: 2%;
+    line-height: 1em;
+  }
+
+  #img-div {
+    width: 96%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: 2%;
+  }
+
+/*======================
+  hr {
+    display: none;
+  }
+======================*/
+  
+  #flex-content {
+    margin: 2% 4% 2% 4%;
+    width: 92%;
+  }
+}
+
+@media (min-width: 37.5em) {
+  #flex-content {
+    margin: 2% 6% 2% 6%;
+    width: 88%;
+  }
+
+  #main-content {
+    font-size: 0.8em;
+  }
+
+  #img-caption {
+    font-size: 0.6em;
+  }
+  
+  #img2-caption {
+    font-size: 0.6em;
+    }
+}
+
+@media (min-width: 48em) {
+  #main-content {
+    font-size: 1em;
+  }
+  #photos-contents {
+    font-size: 0.8em;
+  }
+
+  #flex-content {
+    margin: 2% 8% 2% 8%;
+    width: 84%;
+  }
+
+  #img-caption {
+    font-size: 0.8em;
+  }
+  
+  #img2-caption {
+  font-size: 0.8em;
+}
+  
+  #title-container {
+    font-size: 1.2em;
+  }
+
+  .content-header h3 {
+    font-size: 1em;
+  }
+
+  .headings {
+    font-family: Permanent Marker;
+    font-size: 1.2em;
+    text-align: center;
+  }
+}
+
+@media (min-width: 64em) {
+  #flex-content {
+    flex-direction: row;
+  }
+
+  #bio {
+    width: 65%;
+  }
+
+  #photos {
+    width: 30%;
+    grid-template-rows: 10vh 15% 50%;
+    grid-row-gap: 0.5em;
+  }
+
+  .headings {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 10vh;
+  }
+
+  #img-div {
+    width: 96%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin: 2%;
+  }
+
+  #photos-contents {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 1em;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  /*======================
+  hr {
+    display: block;
+  }
+  ======================*/
+  
+  .facts {
+    display: block;
+  }
+
+  #Img2-div {
+    display: block;
+    width:100%;
+  }
+  
+  #img2{
+    display:inline;
+  }
+
+  
+  #img2-caption{
+    display:block;
+  }
+}
+
+@media (min-width: 68.75em) {
+  #title-container{
+      background-attachment: fixed;
+  }
+ 
+  .facts {
+    display: inline;
+  }
+}
+
+@media (min-width: 81.25em) {
+  #photos {
+    grid-gap: 0;
+  }
+
+  #img-div {
+    margin: 3% 2% 3% 2%;
+  }
+
+  .headings {
+    font-size: 1.6em;
+  }
+
+  #main-content {
+    font-size: 1.2em;
+  }
+
+  #photos-contents {
+    margin-top: 12%;
+  }
+
+  .facts {
+    display: block;
+  }
+
+
+  #title-container {
+    font-size: 1.6em;
+  }
+
+  .content-header h3 {
+    font-size: 1.2em;
+  }
+
+  #photos-contents {
+    margin-top: 12%;
+  }
+}
+
+@media (min-width: 100em) {
+  #photos-contents {
+    margin-top: 2%;
+  }  
+}

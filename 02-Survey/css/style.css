@@ -1,0 +1,94 @@
+/*  $GLOBAL  */
+html,body{
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align:center;
+  min-width:260px;
+  color:#333000;
+  min-width: 350px;
+  background-color: #424242;
+}
+
+h1 {
+  font-family: 'Major Mono Display', monospace;
+  color: #FAFAFA;
+  font-size: 52px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+#main {
+  margin: auto;
+  background-color: #FAFAFA;
+  border-radius: 5px;
+  width: 50%;
+  margin-bottom: 20px;
+  border: 5px double darkgrey;
+}
+
+/*  $p  */
+#description {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  text-align: left;
+  padding: 10px;
+}
+
+/*  $FORM  */
+.labels {
+  padding: 5px 20px 0px 20px;
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+  float: left;
+}
+
+label {
+   font-weight: normal;
+}
+
+.inputs {
+  padding: 5px 20px 0px 0px;
+  display: inline-block;
+  width: 70%;
+  text-align: left;
+  float: center;
+}
+
+input[type=text],  input[type=email], input[type=number], select, textarea, #submit {
+  width: 75%;
+}
+
+#submit:hover {
+  background: #424242;
+  color: #FAFAFA;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: -35px;
+  width: auto;
+}
+
+#submit {
+  margin: 20px;
+}
+
+@media (max-width: 400px){
+  #main {
+    width: 90%;
+  }
+  
+  .labels {
+    padding: 5px 20px 0 20px;
+    width: 100%;
+    text-align: left;
+  float: left;
+  }
+  
+  .inputs {
+    padding: 5px 20px 0 20px;
+    width: 90%;
+    text-align: left;
+  float: left;
+  }
+}

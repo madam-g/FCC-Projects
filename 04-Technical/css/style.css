@@ -1,0 +1,92 @@
+body {
+  margin: 0px;
+}
+
+nav {
+  background: linear-gradient(#e8e8e8, #fffcfc);
+  list-style-type: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 185px;
+  font-family: sans-serif;
+}
+
+#main-doc {
+  margin-left: 185px;
+  width: auto;
+}
+
+.nav-header {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+  padding-left: 0.5em;
+  padding-top: 0.5em;
+}
+
+.nav-link {
+  width: 100%;
+  color: black;
+  
+}
+
+.nav-box {
+  padding-left: 0.7em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.nav-box:hover {
+  background: #dcdde5;
+}
+
+a {text-decoration: none}
+
+header {
+  font-size: 1.3em;
+  font-weight: bold;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.gray-background {
+  background: #e8e8e8;
+  width: auto;
+  padding: 3vw;
+}
+
+.white-background {
+  background: #fffcfc;
+  width: auto;
+  padding: 3vw;
+}
+
+h1 {
+  padding: 3vw;
+  font-size: 2em;
+}
+
+p, li, h1 {
+  font-family: 'Nanum Gothic', sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+  }
+
+.code-container {
+  background: #bccce5;
+  border-radius: 5px;
+  padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-right: 1em;
+}
+
+@media (max-width: 500px) {
+  #main-doc {margin-left: 130px;}
+  nav {width: 130px;}
+  .nav-box {
+  padding-left: 0.4em;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+}
+}

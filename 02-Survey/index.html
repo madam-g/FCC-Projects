@@ -1,0 +1,77 @@
+<h1 id="title">suRVeY fORM</h1>
+<div id="main">
+  <p id="description">From all of us at Luna Terrace Pop-Ups, thank you so much for taking the time to get into the spirit of our party. Without your attention to details and fabulous attitude, the event would not have been nearly as much fun.</p>
+  <p id="description"> We do hope to see you at out next pop-up speakeasy, but first, please let us know how we did this year!</p>
+
+<!-- $FORM BEGINS-->
+  <form id="survey-form">  
+    <div class="row">
+      <div class="labels"><label id="name-label">Name</label></div>
+      <div class="inputs"><input type="text" name="name" id="name" placeholder="Enter your name" required><br></div>
+    </div>
+ 
+    <div class="row">
+      <div class="labels"><label id="email-label">E-mail</label></div>
+      <div class="inputs"><input type="email" name="email" id="email" placeholder="Enter your email" required><br></div>
+    </div>
+    
+    <div class="row">
+      <div class="labels"><label id="number-label">Age: </label></div>
+      <div class="inputs"><input type="number" name="age" id="number" placeholder="Enter your age" min="21" max="125" required><br><br></div>
+    </div>
+    
+<!-- $SURVEY BEGINS -->
+    <div class="row">
+      <div class="labels"><label id="dropdown-label">How did you hear about us?</label></div>
+      <div class="inputs"><select id="dropdown" name="role">
+        <option value = "" disabled selected>Choose one option</option>
+        <option value = "friend">I'm a friend or family member of staff.</option>
+        <option value = "invite">I received a random invite.</option>
+        <option value = "door">I heard the music and solved the riddle at the door.</option>
+        <option value = "nosay">Prefer not to say...</option>      
+        </select>
+        <br><br>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="labels"><label id="radio-label">Did you enjoy the entertainment at the party?</label></div>
+      <div class="inputs">
+        <ul>
+          <li><input type="radio" name="recommend" value="definitely"> Definitely</li>
+          <li><input type="radio" name="recommend" value="maybe"> Somewhat</li>
+          <li><input type="radio" name="recommend" value="notsure"> Not at all</li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="labels"><label id="dropdown-label-two">How would you rate our staff's service?</label></div>
+      <div class="inputs"><select id="dropdown" name="role">
+      <option value = "" disabled selected>Choose one option</option>
+      <option value = "excellent">Excellent</option>
+      <option value = "good">Good</option>
+      <option value = "okay">Okay</option>
+      <option value = "poor">Poor</option>        
+      </select>
+        <br><br>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="labels"><label id="checkboc-label">How many were in your party this year?</label></div>
+      <div class="inputs">
+        <ul>
+          <li><input type="checkbox" name="improve" value="solo">1<input type="checkbox" name="improve" value="couple">2<input type="checkbox" name="improve" value="trio">3<input type="checkbox" name="improve" value="full">4+</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="labels"><label id="textarea-label">Tell us how you feel!</label></div>
+      <div class="inputs"><textarea>Enter your comments and suggestions here.</textarea><br></div>
+    </div>
+    <input id="submit" type="submit" value="Submit">
+  </form>
+</div>
+<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
